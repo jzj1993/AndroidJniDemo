@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mContainer = findViewById(R.id.container);
-        for (int i = 1; i <= 8; i++) {
+        for (int i = 1; i <= 9; i++) {
             final int finalI = i;
             final String text = i + "";
             Button button = new Button(this);

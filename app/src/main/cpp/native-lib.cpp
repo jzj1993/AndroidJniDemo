@@ -111,6 +111,16 @@ Java_com_demo_jnidemo_MainActivity_nativeMethod(JNIEnv *env, jobject thisObj, ji
             // java catch the native error 2
             break;
         }
+        case 9: {
+            // describe exception
+            LOGD("c++ 1");
+            throwJavaException(env, "native error 1");
+            LOGD("c++ 2");
+            env->ExceptionDescribe(); // print to the Java System.err
+            LOGD("c++ 3");
+            // java catch the native error 1
+            break;
+        }
         default:
             break;
     }
